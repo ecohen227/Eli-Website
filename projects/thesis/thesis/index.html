@@ -22,7 +22,7 @@
     
     
       
-        <title>Thesis - Eli Cohen</title>
+        <title>GWSkyNetLite: A Gravitational Wave Glitch Classifier Using High Speed Localization Skymaps - Eli Cohen</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#thesis" class="md-skip">
+        <a href="#gwskynetlite-a-gravitational-wave-glitch-classifier-using-high-speed-localization-skymaps" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Thesis
+              GWSkyNetLite: A Gravitational Wave Glitch Classifier Using High Speed Localization Skymaps
             
           </span>
         </div>
@@ -216,23 +216,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../about/about_index/" class="md-tabs__link">
-        
-  
-    
-  
-  About Me
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="../../../research/research_index/" class="md-tabs__link">
         
   
@@ -256,6 +239,40 @@
     
   
   Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/outreach/" class="md-tabs__link">
+        
+  
+    
+  
+  Outreach
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/about_index/" class="md-tabs__link">
+        
+  
+    
+  
+  About Me
 
       </a>
     </li>
@@ -330,26 +347,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/about_index/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    About Me
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../research/research_index/" class="md-nav__link">
         
   
@@ -383,6 +380,46 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/outreach/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Outreach
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/about_index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Me
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -398,7 +435,14 @@
                   
 
 
-<h1 id="thesis">Thesis</h1>
+<h1 id="gwskynetlite-a-gravitational-wave-glitch-classifier-using-high-speed-localization-skymaps">GWSkyNetLite: A Gravitational Wave Glitch Classifier Using High Speed Localization Skymaps</h1>
+<p>For my undergraduate honours thesis I worked as part of the UBC LIGO group to develop the convolutional neural-network GWSkyNetLite, a low latency gravitational wave event classifier. </p>
+<p>In order to discern events from glitches the model uses novel high speed source localizations[1]. These localizations, dubbed skymaps, are 2D probability distributions representing the confidence that a gravitational wave is at a particular wave in the sky. These skymaps contain information about the veracity of an event, and classifiers like GWSkyNet[2] and GWSkyNetLite can take advantage of features in the data to classify candidates.</p>
+<p>The actual model was constructed using a blend of transformer architecture and convolutional elements. The architecture of this model was selected to maximize performance while meeting low latency states. Additionally, the final model was ensembled in parallel to improve performance while keeping the time to generate a prediction low.</p>
+<p>After the model was constructed additional analysis was performed to identify the patterns and features in the data that the model was using to generate predictions. This was inspired by the growing sentiment that machine learning algorithms should be explainable rather than opaque black boxes. I used techniques such as feature visualization[3], obscuring regions of the skymap before generating predictions, and analyzing saliency maps of skymaps to draw these conclusions.</p>
+<p><a href="https://doi.org/10.1103/PhysRevD.103.043011">[1]T. Tsutsui, K. Cannon, and L. Tsukada, <em>High speed source localization in searches for gravitational waves from compact object collisions</em>, Physical Review D <strong>103</strong> (2021)</a></p>
+<p><a href="https://doi.org/10.48550/arXiv.2010.11829">[2]M. Cabero, A. Mahabal, and J. McIver, <em>GWSkyNet: a real-time classifier for public gravitational-wave candidates</em>, The Astrophysical Journal Letters 904, (2020)</a></p>
+<p><a href="https://doi.org/10.48550/arXiv.2010.11829">[2]Olah, et al., <em>Feature Visualization</em>, Distill, (2017))</a></p>
 <iframe src="../thesis.pdf" width="100%" height="600"></iframe>
 
 
